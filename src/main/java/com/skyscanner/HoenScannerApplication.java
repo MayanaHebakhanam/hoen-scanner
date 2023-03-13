@@ -35,7 +35,7 @@ public class HoenScannerApplication extends Application<HoenScannerConfiguration
     	ObjectMapper mapper=new ObjectMapper();
     	List<SearchResult> carResults=Arrays.asList(
     		mapper.readValue(
-    			getClass().getClassLoader().getResource("rental_cars.json"),
+    			getClass().getClassLoader().getResource("hotels.json"),
     			SearchResult[].class
     			)
     			);
